@@ -5,7 +5,7 @@ const Header = ({ Gnb }) => {
                 <div className="inner">
                     <h1>
                         <a href="/">
-                            <img src="./img/tree_logo.png" alt="" />
+                            <img src={process.env.PUBLIC_URL + `/img/logo.png`} alt="" />
                         </a>
                     </h1>
                     <nav className="gnb">
@@ -13,6 +13,7 @@ const Header = ({ Gnb }) => {
                             {Gnb.map((it, idx) => (
                                 <li key={idx}>
                                     <a href={it.link}>{it.NavTit}</a>
+
                                     <ul className="drop_menu">
                                         {
                                             it.submenu.map((subit, idx) => (
@@ -22,10 +23,14 @@ const Header = ({ Gnb }) => {
                                             ))
                                         }
                                     </ul>
+
                                 </li>
                             ))}
                         </ul>
                     </nav>
+                    <div class="bar">
+                        <i class="xi-bars"></i>
+                    </div>
                 </div>
             </header>
         </>

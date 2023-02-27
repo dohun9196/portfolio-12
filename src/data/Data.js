@@ -17,7 +17,7 @@ export const Gnb = [
         ]
     },
     {
-        NavTit: '사이버홍보센터', link: '#!', submenu: [
+        NavTit: '홍보센터', link: '#!', submenu: [
             { tit: '브랜드소개', lik: '#!' },
             { tit: 'BI소개', lik: '#!' },
             { tit: '시공능력평가액', lik: '#!' },

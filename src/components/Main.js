@@ -2,8 +2,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
 import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
+import styled from "styled-components";
 
-const Main = ({ SlideText, BusiArea, PortList, Prologue }) => {
+
+
+
+function Main({ SlideText, BusiArea, PortList, Prologue }) {
 
     const Main_slide = {
         dots: true,
@@ -14,6 +18,8 @@ const Main = ({ SlideText, BusiArea, PortList, Prologue }) => {
         nextArrow: <BsArrowRightShort />,
         prevArrow: <BsArrowLeftShort />
     };
+
+
 
     return (
         <>
@@ -35,7 +41,7 @@ const Main = ({ SlideText, BusiArea, PortList, Prologue }) => {
                     </Slider>
                 </div>
                 <div className="SC_ico">
-                    <img src="{process.env.PUBLIC_URL + `/img/scroll.png`}" alt="스크롤다운" />
+                    <img src={process.env.PUBLIC_URL + `/img/scroll.png`} alt="스크롤다운" />
                 </div>
             </section>
 
