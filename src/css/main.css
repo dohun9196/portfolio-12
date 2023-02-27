@@ -1,0 +1,24 @@
+.mainSection01 {
+    position: relative;
+}
+
+.mainSection01 .main_slide figure {
+    height: 100vh;
+}
+
+.mainSection01 .main_slide .slide_itm01 {
+    background: url(../../public/img/mainVisual01.jpg) no-repeat center center /cover;
+}
+
+.mainSection01 .main_slide .slide_itm02 {
+    background: url(../../public/img/mainVisual02.jpg) no-repeat center center /cover;
+}
+
+.mainSection01 .main_slide figure .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    color: #000;
+}
