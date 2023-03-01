@@ -18,6 +18,16 @@ function Main({ SlideText, BusiArea, PortList, Prologue }) {
         nextArrow: <BsArrowRightShort />,
         prevArrow: <BsArrowLeftShort />
     };
+    const Main_portfolio = {
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+
+    };
 
 
 
@@ -45,47 +55,52 @@ function Main({ SlideText, BusiArea, PortList, Prologue }) {
                 </div>
             </section>
 
-            <section className="mainSection02">
+            <section className="mainSection02 sec">
                 <div className="inner">
-                    <div className="tit">
+                    <div className="m_cont_tit">
                         <h2>BUSINESS AREA</h2>
                         <p>당신의 생활에 신성건설이 늘 함께합니다.</p>
                     </div>
-                    {BusiArea.map((it, idx) => (
-                        <ul>
+
+                    <ul className="Bus_flex">
+                        {BusiArea.map((it, idx) => (
                             <li className={`bus_itm0${idx + 1}`} key={idx}>
-                                <span>{it.Title}</span>
-                                <p>{it.Desc}</p>
+                                <div class="bus_flex_text">
+                                    <span>{it.Title}</span>
+                                    <p>{it.Desc}</p>
+                                </div>
                             </li>
-                        </ul>
-                    ))
-                    }
+
+                        ))
+                        }
+                    </ul>
                 </div>
             </section>
 
-            <section className="mainSection03">
+            <section className="mainSection03 sec">
                 <div className="inner">
-                    <div className="tit">
+                    <div className="m_cont_tit">
                         <h2>PORTFOLIO</h2>
                         <p>고객이 꿈꾸는 세상을 만들거나느 르네블루 신성건설</p>
                     </div>
+
+                    <Slider {...Main_portfolio}>
+                        {PortList.map((it, idx) => (
+                            <ul className="port_slide">
+                                <li className={`port_itm0${idx + 1}`} key={idx}>
+                                    <span>{it.Title}</span>
+                                </li>
+                            </ul>
+                        ))
+                        }
+                    </Slider>
                 </div>
-                <Slider>
-                    {Prologue.map((it, idx) => (
-                        <ul>
-                            <li className={`port_itm0${idx + 1}`} key={idx}>
-                                <span>{it.Title}</span>
-                            </li>
-                        </ul>
-                    ))
-                    }
-                </Slider>
             </section>
 
-            <section className="mainSection04">
+            <section className="mainSection04 sec">
                 <div className="inner">
                     {Prologue.map((it, idx) => (
-                        <div className="prologu_text_box">
+                        <div className="m_cont_tit">
                             <h2>{it.Title}</h2>
                             <span>{it.SubTit}</span>
                             {
@@ -96,6 +111,10 @@ function Main({ SlideText, BusiArea, PortList, Prologue }) {
 
                         </div>
                     ))}
+                    <div class="prologue_link">
+                        <a href="">기업소개 바로가기</a>
+                        <a href="">기업PDF 다운로드</a>
+                    </div>
                 </div>
             </section>
 
