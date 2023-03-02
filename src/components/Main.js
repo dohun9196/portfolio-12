@@ -124,7 +124,7 @@ function Main({ SlideText, BusText, BusiArea, PortList, Prologue }) {
                         </div>
                     ))}
                     <div class="prologue_link">
-                        <Link to=''>기업소개 바로가기</Link>
+                        <Link to='/sub01_02'>기업소개 바로가기</Link>
                         <Link to=''>기업PDF 다운로드</Link>
                     </div>
                 </div>

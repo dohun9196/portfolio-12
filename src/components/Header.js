@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+
 const Header = ({ Gnb }) => {
     return (
         <>
@@ -29,8 +30,8 @@ const Header = ({ Gnb }) => {
                             ))}
                         </ul>
                     </nav>
-                    <div class="bar">
-                        <i class="xi-bars"></i>
+                    <div className="bar">
+                        <i className="xi-bars"></i>
                     </div>
                 </div>
             </header>

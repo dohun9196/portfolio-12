@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import SubHeader from './SubHeader';
 import SubNav from './SubNav';
 
-const Sub01_01 = ({ SubHeaderData }) => {
+const Sub01_04 = ({ SubHeaderData }) => {
 
     return (
         <>
@@ -11,7 +11,7 @@ const Sub01_01 = ({ SubHeaderData }) => {
             <SubNav SubHeaderData={SubHeaderData} />
             <section className='sub01Content sec'>
                 <div className="inner">
-                    <img src={process.env.PUBLIC_URL + `/img/sub01_1.jpg`} alt="" />
+                    <img src={process.env.PUBLIC_URL + `/img/sub01_4.jpg`} alt="" />
                 </div>
             </section>
         </>
@@ -19,4 +19,4 @@ const Sub01_01 = ({ SubHeaderData }) => {
     )
 }
 
-export default Sub01_01;
+export default Sub01_04;

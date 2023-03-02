@@ -101,26 +101,31 @@ export const Q_menu = [
 ];
 
 // SubHeader
-export const SubHeader = [
-    { id: 1, Title: '타이틀', Desc: '설명' }
+export const SubHeaderData = [
+    { id: 1, Title: 'CEO 인사말', Desc: 'ceo-message', lik: '/Sub01_01' },
+    { id: 2, Title: '기업이념', Desc: 'company', lik: '/Sub01_02' },
+    { id: 3, Title: '연혁', Desc: 'histroy', lik: '/Sub01_03' },
+    { id: 4, Title: '조직도', Desc: 'organization', lik: '/Sub01_04' },
+    { id: 5, Title: '찾아오시는길', Desc: 'location', lik: '/Sub01_05' },
+    { id: 6, Title: '윤리경영', Desc: 'contribute', lik: '/Sub02_01' },
+    { id: 7, Title: '안전보건경영', Desc: 'management', lik: '/Sub02_02' },
+    { id: 8, Title: '사회공헌', Desc: 'contribution', lik: '/Sub02_03' },
+    { id: 9, Title: '사이버신문고', Desc: 'reports', lik: '/Sub02_04' },
+    { id: 10, Title: '브랜드소개', Desc: 'brand', lik: '/Sub03_01' },
+    { id: 11, Title: 'BI소개', Desc: 'bi', lik: '/Sub03_02' },
+    { id: 12, Title: '시공능력평가액', Desc: 'capability', lik: '/Sub03_03' },
+    { id: 13, Title: '기성실적액', Desc: 'results', lik: '/Sub03_04' },
+    { id: 14, Title: '면허보유현황', Desc: 'certificate', lik: '/Sub03_05' },
+    { id: 15, Title: '신용등급', Desc: 'credibility', lik: '/Sub03_06' },
+    { id: 16, Title: '수상실적', Desc: 'award', lik: '/Sub03_07' },
+    { id: 17, Title: '공사실적', Desc: 'performance', lik: '/Sub04_01' },
+    { id: 18, Title: '토목공사업', Desc: 'civil work', lik: '/Sub04_02' },
+    { id: 19, Title: '건축주택사업', Desc: 'building work', lik: '/Sub04_03' },
+    { id: 19, Title: '조경공사업', Desc: 'landscaping work', lik: '/Sub04_04' },
+    { id: 19, Title: '기타공사업', Desc: 'other work', lik: '/Sub04_05' },
+    // { id: 19, Title: '1', Desc: '2', lik: '/Sub01_05' },
 ];
-    // {
-    //     id: 1, link: '/Sub01_01', SubText: [
-    //         { Title: 'CEO 인사말', Desc: 'ceo-message' },
-    //         { Title: '기업이념', Desc: 'company' },
-    //         { Title: '연혁', Desc: 'histroy' },
-    //         { Title: '조직도', Desc: 'organization' },
-    //         { Title: '찾아오시는길', Desc: 'location' },
-    //     ]
-    // },
-    // {
-    //     id: 2, SubText: [
-    //         { Title: '윤리경영', Desc: 'contribute' },
-    //         { Title: '안전보건경영', Desc: 'management' },
-    //         { Title: '사회공헌', Desc: 'contribution' },
-    //         { Title: '사이버신문고', Desc: 'reports' },
-    //     ]
-    // },
+
     // {
     //     id: 3, SubText: [
     //         { Title: '브랜드소개', Desc: 'brand' },

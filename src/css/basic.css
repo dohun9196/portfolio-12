@@ -122,18 +122,19 @@ button {
 
 .sp_top_tit {
     text-align: center;
-    color: #fff;
+
 }
 
 .sp_top_tit strong {
     display: block;
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 500;
     margin: 0 0 20px 0;
+    color: #1b2741;
 }
 
 .sp_top_tit span {
     display: block;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
 }
