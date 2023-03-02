@@ -1,39 +1,39 @@
 // Header
 export const Gnb = [
     {
-        NavTit: '신성소개', link: '#!', submenu: [
-            { tit: 'CEO 인사말', lik: '#!' },
-            { tit: '기업이념', lik: '#!' },
-            { tit: '연혁', lik: '#!' },
-            { tit: '조직도', lik: '#!' },
-            { tit: '찾아오시는길', lik: '#!' }
+        NavTit: '신성소개', link: '/Sub01_01', submenu: [
+            { tit: 'CEO 인사말', lik: '/Sub01_01' },
+            { tit: '기업이념', lik: '/Sub01_02' },
+            { tit: '연혁', lik: '/Sub01_03' },
+            { tit: '조직도', lik: '/Sub01_04' },
+            { tit: '찾아오시는길', lik: '/Sub01_05' }
         ]
     },
     {
-        NavTit: '윤리경영', link: '#!', submenu: [
-            { tit: '안전보건경영', lik: '#!' },
-            { tit: '사회공헌', lik: '#!' },
-            { tit: '사이버신문고', lik: '#!' }
+        NavTit: '윤리경영', link: '/Sub02_01', submenu: [
+            { tit: '안전보건경영', lik: '/Sub02_01' },
+            { tit: '사회공헌', lik: '/Sub02_02' },
+            { tit: '사이버신문고', lik: '/Sub02_03' }
         ]
     },
     {
-        NavTit: '홍보센터', link: '#!', submenu: [
-            { tit: '브랜드소개', lik: '#!' },
-            { tit: 'BI소개', lik: '#!' },
-            { tit: '시공능력평가액', lik: '#!' },
-            { tit: '기성실적액', lik: '#!' },
-            { tit: '면허보유현황', lik: '#!' },
-            { tit: '신용등급', lik: '#!' },
-            { tit: '수상실적', lik: '#!' }
+        NavTit: '홍보센터', link: '/Sub03_01', submenu: [
+            { tit: '브랜드소개', lik: '/Sub03_01' },
+            { tit: 'BI소개', lik: '/Sub03_02' },
+            { tit: '시공능력평가액', lik: '/Sub03_03' },
+            { tit: '기성실적액', lik: '/Sub03_04' },
+            { tit: '면허보유현황', lik: '/Sub03_05' },
+            { tit: '신용등급', lik: '/Sub03_06' },
+            { tit: '수상실적', lik: '/Sub03_07' }
         ]
     },
     {
-        NavTit: '사업실적', link: '#!', submenu: [
-            { tit: '공사실적', lik: '#!' },
-            { tit: '토목공사업', lik: '#!' },
-            { tit: '건축주택사업', lik: '#!' },
-            { tit: '조경공사업', lik: '#!' },
-            { tit: '기타공사업', lik: '#!' }
+        NavTit: '사업실적', link: '/Sub04_01', submenu: [
+            { tit: '공사실적', lik: '/Sub04_01' },
+            { tit: '토목공사업', lik: '/Sub04_02' },
+            { tit: '건축주택사업', lik: '/Sub04_03' },
+            { tit: '조경공사업', lik: '/Sub04_04' },
+            { tit: '기타공사업', lik: '/Sub04_05' }
         ]
     },
     {
@@ -60,11 +60,15 @@ export const SlideText = [
 ];
 
 // Main--section02
+export const BusText = [
+    { Title: 'BUSINESS AREA', Desc: '당신의 생활에 신성건설이 늘 함께합니다.' }
+];
+
 export const BusiArea = [
-    { id: 0, Title: 'CIVIL WORKS', Desc: '토목' },
-    { id: 1, Title: 'ARCHITECTURAL WORKS', Desc: '건축·주택' },
-    { id: 2, Title: 'RANDSCAPING WORKS', Desc: '조경' },
-    { id: 3, Title: 'OTHER WORKS', Desc: '기타' }
+    { id: 0, Title: 'CIVIL WORKS', Desc: '토목', Link: '/Sub04_02' },
+    { id: 1, Title: 'ARCHITECTURAL WORKS', Desc: '건축·주택', Link: '/Sub04_03' },
+    { id: 2, Title: 'RANDSCAPING WORKS', Desc: '조경', Link: '/Sub04_04' },
+    { id: 3, Title: 'OTHER WORKS', Desc: '기타', Link: '/Sub04_05' }
 ];
 
 // Main--section03
@@ -95,3 +99,60 @@ export const Q_menu = [
     { Title: '사회공헌', Desc: '따뜻한 나눔이 행복한 세상을 만듭니다.', Link: '자세히보기' },
     { Title: '고객센터', Desc: '항상 고객의 소리에 귀 기울이겠습니다.', Link: '자세히보기' }
 ];
+
+// SubHeader
+export const SubHeader = [
+    { id: 1, Title: '타이틀', Desc: '설명' }
+];
+    // {
+    //     id: 1, link: '/Sub01_01', SubText: [
+    //         { Title: 'CEO 인사말', Desc: 'ceo-message' },
+    //         { Title: '기업이념', Desc: 'company' },
+    //         { Title: '연혁', Desc: 'histroy' },
+    //         { Title: '조직도', Desc: 'organization' },
+    //         { Title: '찾아오시는길', Desc: 'location' },
+    //     ]
+    // },
+    // {
+    //     id: 2, SubText: [
+    //         { Title: '윤리경영', Desc: 'contribute' },
+    //         { Title: '안전보건경영', Desc: 'management' },
+    //         { Title: '사회공헌', Desc: 'contribution' },
+    //         { Title: '사이버신문고', Desc: 'reports' },
+    //     ]
+    // },
+    // {
+    //     id: 3, SubText: [
+    //         { Title: '브랜드소개', Desc: 'brand' },
+    //         { Title: 'BI소개', Desc: 'bi' },
+    //         { Title: '시공능력평가액', Desc: 'capability' },
+    //         { Title: '기성실적액', Desc: 'results' },
+    //         { Title: '면허보유현황', Desc: 'certificate' },
+    //         { Title: '신용등급', Desc: 'credibility' },
+    //         { Title: '수상실적', Desc: 'award' },
+    //     ]
+    // },
+    // {
+    //     id: 4, SubText: [
+    //         { Title: '공사실적', Desc: 'brand' },
+    //         { Title: '토목공사업', Desc: 'civil work' },
+    //         { Title: '건축주택사업', Desc: 'building work' },
+    //         { Title: '조경공사업', Desc: 'landscaping work' },
+    //         { Title: '기타공사업', Desc: 'other work' },
+    //     ]
+    // },
+    // {
+    //     id: 4, SubText: [
+    //         { Title: '고객의소리', Desc: 'people' },
+    //         { Title: '공지사항', Desc: 'notice' },
+    //     ]
+    // },
+    // {
+    //     id: 5, SubText: [
+    //         { Title: '채용절차', Desc: 'recruit' },
+    //         { Title: '채용소식', Desc: 'recruit info' },
+    //         { Title: '인재상', Desc: 'talent' },
+    //         { Title: '복리후생', Desc: 'welfare' },
+    //         { Title: '인사제도', Desc: 'management' },
+    //     ]
+    // },

@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
-import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
-import styled from "styled-components";
+import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 
 
 
 
-function Main({ SlideText, BusiArea, PortList, Prologue }) {
+
+function Main({ SlideText, BusText, BusiArea, PortList, Prologue }) {
 
     const Main_slide = {
         dots: true,
@@ -15,8 +16,8 @@ function Main({ SlideText, BusiArea, PortList, Prologue }) {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        nextArrow: <BsArrowRightShort />,
-        prevArrow: <BsArrowLeftShort />
+        nextArrow: <BsChevronRight />,
+        prevArrow: <BsChevronLeft />
     };
     const Main_portfolio = {
         dots: true,
@@ -58,20 +59,31 @@ function Main({ SlideText, BusiArea, PortList, Prologue }) {
             <section className="mainSection02 sec">
                 <div className="inner">
                     <div className="m_cont_tit">
-                        <h2>BUSINESS AREA</h2>
-                        <p>당신의 생활에 신성건설이 늘 함께합니다.</p>
+                        {BusText.map(it => {
+                            return (
+                                <>
+                                    <h2>{it.Title}</h2>
+                                    <p>{it.Desc}</p>
+                                </>
+                            )
+                        })}
+
                     </div>
 
                     <ul className="Bus_flex">
-                        {BusiArea.map((it, idx) => (
-                            <li className={`bus_itm0${idx + 1}`} key={idx}>
-                                <div class="bus_flex_text">
-                                    <span>{it.Title}</span>
-                                    <p>{it.Desc}</p>
-                                </div>
-                            </li>
+                        {BusiArea.map((it, idx) => {
+                            return (
+                                <li className={`bus_itm0${idx + 1}`} key={idx}>
+                                    <Link to={it.Link}>
+                                        <div class="bus_flex_text">
+                                            <span>{it.Title}</span>
+                                            <p>{it.Desc}</p>
+                                        </div>
+                                    </Link>
+                                </li>
 
-                        ))
+                            )
+                        })
                         }
                     </ul>
                 </div>
@@ -112,8 +124,8 @@ function Main({ SlideText, BusiArea, PortList, Prologue }) {
                         </div>
                     ))}
                     <div class="prologue_link">
-                        <a href="">기업소개 바로가기</a>
-                        <a href="">기업PDF 다운로드</a>
+                        <Link to=''>기업소개 바로가기</Link>
+                        <Link to=''>기업PDF 다운로드</Link>
                     </div>
                 </div>
             </section>

@@ -1,24 +1,25 @@
+import { Link } from "react-router-dom"
 const Header = ({ Gnb }) => {
     return (
         <>
             <header className="header">
                 <div className="inner">
                     <h1>
-                        <a href="/">
+                        <Link to='/'>
                             <img src={process.env.PUBLIC_URL + `/img/logo.png`} alt="" />
-                        </a>
+                        </Link>
                     </h1>
                     <nav className="gnb">
                         <ul>
                             {Gnb.map((it, idx) => (
                                 <li key={idx}>
-                                    <a href={it.link}>{it.NavTit}</a>
+                                    <Link to={it.link}>{it.NavTit}</Link>
 
                                     <ul className="drop_menu">
                                         {
                                             it.submenu.map((subit, idx) => (
                                                 <li key={idx}>
-                                                    <a href={subit.lik}>{subit.tit}</a>
+                                                    <Link to={subit.lik}>{subit.tit}</Link>
                                                 </li>
                                             ))
                                         }
