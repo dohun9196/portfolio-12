@@ -126,38 +126,29 @@ export const SubHeaderData = [
     // { id: 19, Title: '1', Desc: '2', lik: '/Sub01_05' },
 ];
 
-    // {
-    //     id: 3, SubText: [
-    //         { Title: '브랜드소개', Desc: 'brand' },
-    //         { Title: 'BI소개', Desc: 'bi' },
-    //         { Title: '시공능력평가액', Desc: 'capability' },
-    //         { Title: '기성실적액', Desc: 'results' },
-    //         { Title: '면허보유현황', Desc: 'certificate' },
-    //         { Title: '신용등급', Desc: 'credibility' },
-    //         { Title: '수상실적', Desc: 'award' },
-    //     ]
-    // },
-    // {
-    //     id: 4, SubText: [
-    //         { Title: '공사실적', Desc: 'brand' },
-    //         { Title: '토목공사업', Desc: 'civil work' },
-    //         { Title: '건축주택사업', Desc: 'building work' },
-    //         { Title: '조경공사업', Desc: 'landscaping work' },
-    //         { Title: '기타공사업', Desc: 'other work' },
-    //     ]
-    // },
-    // {
-    //     id: 4, SubText: [
-    //         { Title: '고객의소리', Desc: 'people' },
-    //         { Title: '공지사항', Desc: 'notice' },
-    //     ]
-    // },
-    // {
-    //     id: 5, SubText: [
-    //         { Title: '채용절차', Desc: 'recruit' },
-    //         { Title: '채용소식', Desc: 'recruit info' },
-    //         { Title: '인재상', Desc: 'talent' },
-    //         { Title: '복리후생', Desc: 'welfare' },
-    //         { Title: '인사제도', Desc: 'management' },
-    //     ]
-    // },
+// 서브페이지 CEO 인사말
+export const CeoTit = [
+    { Title: '(주)신성건설, 세상모든 가치를 연결하다', Desc: '(주)신성건설은 무한한 도전과 틀을 깨는 생각으로 사람과 도시, 도시와 자연, 자연과 사람을 연결하여 건설합니다.' }
+]
+export const CeoDesc = [
+    { Title: '(주)신성건설은 고객의 감동을 위해 존재합니다', Desc: '"고객 감동의 정신" 이는 창립이래 줄곧 당사의 기업이념이자 경영의 지표로서(주)신성건설의 오늘을 만들어준 대명제였습니다. 고객의 뜻을 받들고 고객 만족에 최선을 다할 때만이 그 기업이 생존할 수 있다는 사실을 저희 임직원은 너무나 잘 알고 있습니다. 그러하기에 저희 신성은 1979년 창립이래 고객 감동의 정신을 바탕으로 꾸준히 성장, 발정하여 명실상부한 종합건설회사로서의 면모를 갖추게 되었음을 저의 회사를 사랑해 주시는 여러분에게 머리숙여 감사드리는 바입니다.  저희 (주)신성건설은 단순히 이윤을 창출하는 기업이 아니라 고객의 행복을 구현할 책임과 의무가 있는 사회적 존재임을 되새기고, 언제나 고객과 함께한는 기업, 행복한 세상을 열어가는 기업이 되겠습니다.' }
+]
+
+// 서브페이지 기업이념
+export const CompanyTit = [
+    { Title: '실적으로 입증되는 종합건설회사', Desc: '(주)신성건설은 토목, 건축, 조경공사를 비롯한 다양한 프로젝트를 성공적으로 수행해온 대한민국 대표 종합건설 회사입니다.' }
+]
+
+export const CompanyTable = [
+    { Title: '회사명', Desc: '(주)신성건설' },
+    { Title: '대표이사', Desc: '이동규' },
+    { Title: '소재지', Desc: '전북 전주시 덕진구 전주천동로 473 (금암동, 르네블루빌딩)' },
+    { Title: '설립일', Desc: '1979년 5월' },
+    { Title: '사업영역', Desc: '토목, 주택, 건축, 조경' },
+    { Title: '사업자등록번호', Desc: '418-81-10256' },
+    { Title: '법인등록번호', Desc: '210111-0002289' },
+    { Title: '납입자본금', Desc: '3,985,680,000원' },
+    { Title: '전화번호', Desc: '063-232-2244' },
+    { Title: '팩스번호', Desc: '063-232-2241' },
+    { Title: '신용평가등급', Desc: 'A' },
+]

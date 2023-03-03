@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Gnb, SlideText, BusText, BusiArea, PortList, Prologue, Q_menu, SubHeaderData } from './data/Data';
+import { Gnb, SlideText, BusText, BusiArea, PortList, Prologue, Q_menu, SubHeaderData, CeoTit, CeoDesc, CompanyTit, CompanyTable } from './data/Data';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -20,9 +20,9 @@ const App = () => {
           <Main SlideText={SlideText} BusText={BusText} BusiArea={BusiArea} PortList={PortList} Prologue={Prologue} Q_menu={Q_menu} />
         } />
         <Route path="/Sub01_01" element={
-          <Sub01_01 SubHeaderData={SubHeaderData} />} />
+          <Sub01_01 SubHeaderData={SubHeaderData} CeoTit={CeoTit} CeoDesc={CeoDesc} />} />
         <Route path="/Sub01_02" element={
-          <Sub01_02 SubHeaderData={SubHeaderData} />} />
+          <Sub01_02 SubHeaderData={SubHeaderData} CompanyTit={CompanyTit} CompanyTable={CompanyTable} />} />
         <Route path="/Sub01_03" element={
           <Sub01_03 SubHeaderData={SubHeaderData} />} />
         <Route path="/Sub01_04" element={

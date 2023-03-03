@@ -13,6 +13,12 @@
     z-index: 100;
 }
 
+.subimg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
 .sub_nav {
     position: relative;
 }
@@ -64,4 +70,103 @@
     display: block;
     font-size: 20px;
     font-weight: 500;
+}
+
+.sub01Content.ceo .inner {
+    position: relative;
+    text-shadow: 0 0 1px #000;
+    margin-bottom: 100px;
+    height: 200px;
+}
+
+.sub01Content .inner {
+    margin-bottom: 100px;
+}
+
+.sub01Content.ceo .inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.sub01Content.ceo .ceo_message {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sub01Content.ceo .ceo_message span {
+    display: block;
+
+    font-size: 35px;
+    font-weight: 500;
+
+    margin: 0 0 20px 0;
+}
+
+.sub01Content.ceo .ceo_message p {
+
+    font-size: 18px;
+    color: #888;
+    line-height: 1.9;
+
+    padding: 0 10%;
+
+}
+
+.company_content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.company_content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.company_content .left_img {
+    float: left;
+    width: 40%;
+    height: 700px;
+    background-image: url(../../public/img/sub01_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.company_content .right_text {
+    float: right;
+    width: 55%;
+    height: 700px;
+    padding: 10px 0;
+}
+
+.company_content .right_text table tr:first-child {
+    border-top: 1px solid#ddd;
+}
+
+.company_content .right_text table tr:last-child {
+    border-bottom: 1px solid#ddd;
+}
+
+.company_content .right_text table tr~tr {
+    border-top: 1px solid#ddd;
+}
+
+.company_content .right_text table td {
+    padding: 20px 0;
+    color: #555;
+
+}
+
+.company_content .right_text table .compan_table_title {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 100px 20px 0;
+    color: #333;
 }
